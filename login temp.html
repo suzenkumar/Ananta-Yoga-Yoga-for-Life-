@@ -1,0 +1,297 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>Admin Login  For Workshop Database </title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- SEO Meta Tags -->
+    <meta name="description" content="Secure admin login page for Ananta Yoga. Authorized personnel only.">
+    <meta name="keywords" content="Admin Login, Yoga Admin Panel, Ananta Yoga Admin">
+    <meta name="author" content="Ananta Yoga Team">
+
+    <!-- Prevent Search Engine Indexing -->
+    <meta name="robots" content="noindex, nofollow">
+
+    <!-- Canonical URL
+    <link rel="canonical" href="https://www.yourdomain.com/admin-login"> -->
+
+    <!-- Favicons -->
+    <link href="logo/logo.jpg" rel="icon">
+    <link href="logo/logo.jpg" rel="apple-touch-icon">
+
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+
+    <!-- Vendor CSS Files -->
+    <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link href="vendor/font-awesome/css/font-awesome.min.css" rel="stylesheet">
+    <link href="vendor/animate/animate.min.css" rel="stylesheet">
+
+    <!-- Main Stylesheet -->
+    <link href="css/style.css" rel="stylesheet">
+    <!-- Custom CSS for styling the form -->
+    <style>
+        /* General Body Font */
+        body {
+            font-family: 'Roboto', sans-serif;
+        }
+
+        /* Centering the login form */
+        #login {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-color: #f4f4f9;
+        }
+
+        .form {
+            background-color: #ffffff;
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            width: 100%;
+            max-width: 500px;
+            text-align: center;
+        }
+
+        .form h2 {
+            font-size: 32px;
+            margin-bottom: 20px;
+            font-family: 'Roboto', sans-serif;
+        }
+
+        .form p {
+            font-size: 16px;
+            margin-bottom: 30px;
+            font-family: 'Roboto', sans-serif;
+            color: #777;
+        }
+
+        .form .form-control {
+            border-radius: 25px;
+            padding: 15px;
+            margin-bottom: 20px;
+            font-size: 16px;
+            border: 1px solid #ccc;
+            transition: border-color 0.3s ease;
+        }
+
+        .form .form-control:focus {
+            border-color: #6f42c1;
+            box-shadow: 0 0 5px rgba(111, 66, 193, 0.5);
+        }
+
+        .form button {
+            background-color: #6f42c1;
+            color: #fff;
+            font-size: 18px;
+            border: none;
+            padding: 15px 25px;
+            border-radius: 30px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+
+        .form button:hover {
+            background-color: #5a2d99;
+        }
+
+        .form .custom-control-label {
+            font-size: 14px;
+            color: #777;
+        }
+
+        .form .custom-control-input:checked ~ .custom-control-label::before {
+            background-color: #6f42c1;
+        }
+        .view-more-btn {
+        margin-top: 30px;
+    }
+
+    #view-more-link {
+        text-decoration: none; /* Remove the underline from the link */
+    }
+
+    #view-more {
+        background-color: #00bcd4; /* Start with a nice color */
+        color: white;
+        font-size: 16px;
+        padding: 15px 30px;
+        border: none;
+        border-radius: 50px;
+        cursor: pointer;
+        outline: none;
+        box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+        transition: all 0.3s ease;
+        animation: colorChange 3s infinite linear; /* Continuous color change animation */
+    }
+
+    #view-more:hover {
+        background-color: white;
+        transform: scale(1.05);
+        box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+    }
+
+    #view-more:active {
+        background-color: white;
+        transform: scale(0.98);
+    }
+
+    @keyframes colorChange {
+        0% { background-color: #00bcd4; }
+        25% { background-color: #ff4081; }
+        50% { background-color: #8e24aa; }
+        75% { background-color: #7c4dff; }
+        100% { background-color: #00bcd4; }
+    }
+    </style>
+</head>
+
+<body>
+    <!-- Header Section Start -->
+    <div class="menu"> <span></span> </div>
+    <nav id="nav">
+        <ul class="main">
+            <ul class="main">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="teacher.html">Professional Yoga Teachers</a></li>
+                <li><a href="Admission Form.html">Online Admission Form</a></li>
+                <li><a href="class.html">Classes</a></li>
+                <li><a href="blog.html">Latest Blog</a></li>
+                <li><a href="login.html">Admin Login</a></li>
+                <li><a href="contact.html">Contact Us</a></li>
+        </ul>
+    </nav>
+    <div class="overlay"></div>
+
+    <div class="header banner">
+        <div class="container text-center">
+            <div class="row">
+                <div class="col-md-12">
+                    <h1><a class="brand" href="index.html"> Welcome to Ananta Yoga</a></h1>
+                </div>
+            </div>
+
+            <div class="col-md-12">
+                <h1>Home / Admin Login  For Workshop Database</h1>
+            </div>
+        </div>
+    </div>
+    <!-- Header Section End -->
+
+    <!-- Login Section Start -->
+    <section id="login">
+        <div class="container">
+            <div class="section-header">
+                <p>
+                <h2>Admin Login For Workshop Database</h2>
+                    <br> If you have forgotten your User ID, Center Code, and Password , please send mail to (skmphelpline@gmail.com) for assistance.
+                </p>
+            </div>
+            <div class="row justify-content-center">
+                <div class="col-md-6 form">
+                    <form id="adminLoginForm">
+                        <div class="form-row">
+                            <div class="form-group col-md-6">
+                                <input type="text" id="userId" class="form-control" placeholder="User Id" required />
+                            </div>
+                            <div class="form-group col-md-6">
+                                <input type="number" id="centerCode" class="form-control" placeholder="Enter Center Code" required />
+                            </div>
+                        </div>
+                        <div class="form-row">
+                            <div class="form-group col-md-6">
+                                <input type="password" id="password" class="form-control" placeholder="Your Password" required />
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <div class="custom-control custom-checkbox">
+                                <input type="checkbox" class="custom-control-input" id="remember1">
+                                <label class="custom-control-label" for="remember1">Remember me</label>
+                            </div>
+                        </div>
+                        <div>
+                            
+                                    <button id="view-more" type="submit" class="btn btn-primary btn-block animate__animated animate__pulse">Login</button>
+                                   <a href="login.html" id="view-more" type="button" class="btn btn-reset btn-block" > GO TO STUDENT DATABASE LOGIN</a>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+        
+    </section>
+    <!-- Login Section end -->
+
+    <!-- Footer Section Start -->
+    <div id="footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <div class="social">
+                        <a href="https://www.instagram.com/praveerpattanayak?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw=="><li class="fa fa-instagram"></li></a>
+                
+                        <a href="https://www.facebook.com/share/1ZQw247WaA/"><li class="fa fa-facebook-f"></li></a>
+                        
+                    </div>
+                </div>
+                <div class="col-12">
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="about.html">About</a></li>
+                        <li><a href="Admission Form.html">online Admission Form</a></li>
+                        <li><a href="term and condition.html">Terms and Conditions</a></li>
+                        <li><a href="privaypolicy.html">Privacy Policy</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="col-12">
+                    <p>&copy; Copyright <a href="home.html">Ananta Yoga(Yoga For Life)</a>.All Rights Reserved || Last Update on :-23/05/2025 Time:-04:00Pm</p>
+
+                    <p>Designed and Maintained by <a href="https://uqzpr8pm2c24p2fpksmuiw.on.drv.tw/SKMP%20INFOTECH%20TECHNOLOGIES/">SKMP INFOTECH TECHNOLOGIES</a></p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+    <!-- Footer Section End -->
+
+    <a href="#" class="back-to-top"><i class="fa fa-chevron-up"></i></a>
+
+    <!-- Vendor JavaScript File -->
+    <script src="vendor/jquery/jquery.min.js"></script>
+    <script src="vendor/jquery/jquery-migrate.min.js"></script>
+    <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="vendor/easing/easing.min.js"></script>
+    <script src="vendor/wow/wow.min.js"></script>
+
+    <!-- Main Javascript File -->
+    <script src="js/main.js"></script>
+    
+    <!-- EmailJS CDN -->
+<script src="https://script.google.com/macros/s/AKfycbwLRz8NrXuFNskf55k-3x6e2F3QYp1rGvLdukBz-MCfAmF_EsiTqjvZeqmfoTjhEQ/exec"></script>
+
+    <script src="js/script2.js"></script>
+    <!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-B8L0MSB3QK"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-B8L0MSB3QK');
+</script>
+<script src="js/email.js"></script>
+<script src="https://cdn.emailjs.com/dist/email.min.js"></script>
+<!-- Vendor JavaScript File -->
+<script src="vendor/jquery/jquery.min.js"></script>
+<script src="vendor/jquery/jquery-migrate.min.js"></script>
+<script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+<script src="vendor/easing/easing.min.js"></script>
+<script src="vendor/wow/wow.min.js"></script>
+</body>
+</html>
